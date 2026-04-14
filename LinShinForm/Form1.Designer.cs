@@ -41,6 +41,7 @@
             openFileDialog1 = new OpenFileDialog();
             saveFileDialog1 = new SaveFileDialog();
             FilePath_Label = new Label();
+            SurgeryCode = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -167,11 +168,25 @@
             FilePath_Label.TabIndex = 22;
             FilePath_Label.Text = "FilePath";
             // 
+            // SurgeryCode
+            // 
+            SurgeryCode.AutoSize = true;
+            SurgeryCode.Font = new Font("Microsoft JhengHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 136);
+            SurgeryCode.Location = new Point(699, 210);
+            SurgeryCode.Name = "SurgeryCode";
+            SurgeryCode.Size = new Size(143, 28);
+            SurgeryCode.TabIndex = 23;
+            SurgeryCode.Tag = "formtype";
+            SurgeryCode.Text = "處置代碼簡章";
+            SurgeryCode.UseVisualStyleBackColor = true;
+            SurgeryCode.CheckedChanged += ckb_CheckedChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1199, 674);
+            Controls.Add(SurgeryCode);
             Controls.Add(FilePath_Label);
             Controls.Add(SurgeryRecord2);
             Controls.Add(SurgeryRecord);
@@ -205,5 +220,6 @@
         private OpenFileDialog openFileDialog1;
         private SaveFileDialog saveFileDialog1;
         private Label FilePath_Label;
+        private CheckBox SurgeryCode;
     }
 }

@@ -146,12 +146,14 @@ namespace LinShinForm
             {nameof(MaterialRecord), MaterialFormWorker.CreateFormWorker },
             {nameof(SurgeryRecord), SurgeryForm1Worker.CreateFormWorker},
             {nameof(SurgeryRecord2), SurgeryForm2Worker.CreateFormWorker},
+            {nameof(SurgeryCode), SurgeryCodeFormWorker.CreateFormWorker  }
         };
         private readonly Dictionary<string, Dictionary<string, string>> EntityGridHeader = new Dictionary<string, Dictionary<string, string>>()
         {
             {nameof(MaterialRecord), LinShin.Form.Entity.MaterialRecord.DataGridHeader },
             {nameof(SurgeryRecord), LinShin.Form.Entity.SurgeryRecord.DataGridHeader },
-            {nameof(SurgeryRecord2), LinShin.Form.Entity.SurgeryRecord2.DataGridHeader }
+            {nameof(SurgeryRecord2), LinShin.Form.Entity.SurgeryRecord2.DataGridHeader },
+            {nameof(SurgeryCode), LinShin.Form.Entity.SurgeryCode.DataGridHeader }
         };
 
         private void button1_Click(object sender, EventArgs e)

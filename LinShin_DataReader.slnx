@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="LinShinForm/LinShin.Form.csproj">
+    <BuildDependency Project="LinShin_Fundation/LinShin.Fundation.csproj" />
+  </Project>
+  <Project Path="LinShinOR_MaterialDataReader/LinShinOR.MaterialsForm.csproj" />
+  <Project Path="LinShin_DataReader/LinShin.SurgeonSchedule.csproj" />
+  <Project Path="LinShin_Fundation/LinShin.Fundation.csproj" />
+</Solution>
